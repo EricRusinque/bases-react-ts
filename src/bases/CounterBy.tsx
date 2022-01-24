@@ -15,6 +15,7 @@ export const CounterBy = ({ initialValue = 5 }:Props) => {
         counter: initialValue,
         clicks: 0
     });
+
     const handleClick = (value:number) => {
         setCounter( ({ counter, clicks }) => ({
             counter: counter + value,
@@ -24,7 +25,7 @@ export const CounterBy = ({ initialValue = 5 }:Props) => {
 
     return (
         <>
-            <h1>Counter: { counter }</h1>
+            <h1>CounterBy: { counter }</h1>
             <h1>Clicks: { clicks }</h1>
             <button
                 onClick={() => handleClick(+1)}
